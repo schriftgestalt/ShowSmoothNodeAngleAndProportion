@@ -18,8 +18,10 @@ from AppKit import NSMenuItem, NSColor, NSString, NSFont, NSBezierPath, NSLog, N
 #
 ###########################################################################################################
 
+
 def hypotenuse(pos1, pos2):
 	return math.hypot(pos1.x - pos2.x, pos1.y - pos2.y)
+
 
 class showSmoothNodeAngleAndProportion(ReporterPlugin):
 
@@ -439,8 +441,8 @@ class showSmoothNodeAngleAndProportion(ReporterPlugin):
 					compatibleProportions = self.compatibleProportions(glyph, pathIndex, nodeIndex, hypotenuses)
 
 					# Get the angle
-					pos1 = prevNode.position
-					pos2 = nextNode.position
+					# pos1 = prevNode.position
+					# pos2 = nextNode.position
 					# angle = self.getAngle(pos1, pos2)
 					compatibleAngles = self.compatibleAngles(glyph, pathIndex, nodeIndex)
 
